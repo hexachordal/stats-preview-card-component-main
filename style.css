@@ -1,4 +1,8 @@
 body{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 100vh;
     margin: 0px;
     box-sizing: border-box ;
     background-color: hsl(233, 47%, 7%);
@@ -6,11 +10,27 @@ body{
 
 #card{
     display: flex;
+    margin: auto;
+    width: 85vw;
+    height: 50vh;
     background-color: hsl(244, 38%, 16%);
 }
 #lCard{
     width:50%;
+    color: hsl(0, 0%, 100%);
 }
+
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+}
+b{
+    color: hsl(277, 64%, 61%);
+}
+
+.stats{
+    color: hsla(0, 0%, 100%, 0.6);
+}
+
 #rCard{
     background-color: hsl(277, 64%, 61%);
     width:50%
