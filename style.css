@@ -1,62 +1,174 @@
-body{
-    display: flex;
-    flex-direction: column;
-    width: auto;
-    height: 100vh;
-    margin: 0px;
-    box-sizing: border-box ;
-    background-color: hsl(233, 47%, 7%);
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
 
-#card{
-    display: flex;
-    margin: auto;
-    width: 85vw;
-    height: 50vh;
-    background-color: hsl(244, 38%, 16%);
-}
-#lCard{
-    width:50%;
-    color: hsl(0, 0%, 100%);
-}
+@media screen and (max-width: 320px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        font-family: 'Inter', sans-serif;
+        height: 100vh;
+        margin: 0px;
+        box-sizing: border-box ;
+        background-color: hsl(233, 47%, 7%);
+    }
+    
+    #card{
+        display: flex;
+        margin: 10% auto 2% auto;
+        width: 80vw;
+        height: 100%;
+        border-radius: 2% 2% 2% 2%;
+        background-color: hsl(244, 38%, 16%);
+        flex-direction: column-reverse;
+    }
+    #lCard{
+        display: flex;
+        width: 100%;
+        height: 65%;
+        box-sizing: border-box;
+        padding: 0 10% 0 10%;
+        color: hsl(0, 0%, 100%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: inherit;
+    }
+    
+    h1{
+        font-size: 20px;
+        text-align: -webkit-center;
+    }
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+    b{
+        color: hsl(277, 64%, 61%);
+    }
+    .data{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin: 12%;
+        font-size: 16px;
+        text-align: center;
+        font-family: 'Lexend Deca', sans-serif;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .stats{
+        color: hsla(0, 0%, 100%, 0.6);
+        font-size: 10px;
+    }
+    
+    #rCard{
+        background-color: hsl(277, 64%, 61%);
+        height: 35%;
+        box-sizing: border-box;
+        border-radius: inherit;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        opacity: 45%;
+        border-radius: inherit;
+    }
+    .attribution { 
+        font-size: 8px;
+        text-align: center;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+  }
 
-p{
-    color: hsla(0, 0%, 100%, 0.75);
-}
-b{
-    color: hsl(277, 64%, 61%);
-}
-
-.stats{
-    color: hsla(0, 0%, 100%, 0.6);
-}
-
-#rCard{
-    background-color: hsl(277, 64%, 61%);
-    width:50%
-}
-
-img{
-    width: 100%;
-    height: 100%;
-    opacity: 45%;
-}
 
 
 
+@media screen and (min-width: 321px){
 
+    body{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        font-family: 'Inter', sans-serif;
+        height: 100vh;
+        margin: 0px;
+        box-sizing: border-box ;
+        background-color: hsl(233, 47%, 7%);
+    }
+    
+    #card{
+        display: flex;
+        margin: auto;
+        width: 80vw;
+        height: 55vh;
+        border-radius: 2% 2% 2% 2%;
+        background-color: hsl(244, 38%, 16%);
+    }
+    #lCard{
+        display: flex;
+        width: 50%;
+        box-sizing: border-box;
+        padding: 0 10% 0 6%;
+        color: hsl(0, 0%, 100%);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: inherit;
+    }
 
+    h1{
+        font-size: 20px;
+    }
+    
+    p{
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 15px;
+    }
+    b{
+        color: hsl(277, 64%, 61%);
+    }
+    .data{
+        width: 100%;
+        display: flex;
+        margin: 12%;
+        font-family: 'Lexend Deca', sans-serif;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .stats{
+        color: hsla(0, 0%, 100%, 0.6);
+    }
+    
+    #rCard{
+        background-color: hsl(277, 64%, 61%);
+        width: 50%;
+        box-sizing: border-box;
+        border-radius: inherit;
+    }
+    
+    img{
+        width: 100%;
+        height: 100%;
+        opacity: 45%;
+        border-radius: inherit;
+    }
+    .attribution { 
+        font-size: 11px; 
+        text-align: center;
+        color: hsla(0, 0%, 100%, 0.75);
+    }
+    
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
 
-
-
-
-
-
-.attribution { 
-    font-size: 11px; 
-    text-align: center;
-}
-
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
 }
